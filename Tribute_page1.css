@@ -1,0 +1,92 @@
+h1{
+	text-align:center;
+	font-family: georgia,garamond,verdana,sans-serif;
+	font-size: 3vw; /* Vw here will make the text to be responsive relative to the size of the browser*/
+	/*border: solid 10px #2E86C1;*/
+}
+
+
+body{
+		margin-top: 50px;
+		margin-left: 300px;
+		margin-right:250px;
+		background-color: #C0C0C0;
+		margin-bottom: 100px;
+		border: solid 10px gold;
+		padding-top: 50px;  
+		padding-bottom: 50px;
+		padding-right: 50px;
+		padding-left:50px;
+
+		/*background-image:url("nature.jpg");
+		background-repeat:no-repeat;
+		background-position: right top;
+		margin-right:200px;
+		background-attachment:fixed;*/
+	}
+
+/* The code below will make the page to be visible on any type of device*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+    	margin-top: auto;
+		margin-left: auto;
+		margin-right:auto;
+		background-color: #C0C0C0;
+		margin-bottom: auto;
+		border: solid 10px gold;
+		padding-top: auto;  
+		padding-bottom: auto;
+		padding-right: auto;
+		padding-left:auto;
+
+  }
+}
+
+img{ /* This is used for Akiane's picture*/
+	max-width:30%; /*To make the image reponsive this must be in % not in px with height in auto*/
+	height:auto;
+	display:flex; /* or you can also use display: block but display has to be use 
+					beside Maring left and right in order for the picture to be centered;*/
+	margin-left:auto;
+	margin-right: auto;
+	display: block;
+}
+
+#image:hover{
+	-ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1); /* at 1 the image dont move, at x>1 it zoom in, at x<1 it zoom out.*/
+}
+
+#img-caption{
+	text-align:center;
+	font-size: 2vw;
+	font-family: georgia,garamond,verdana,sans-serif;
+}
+
+.shadow {
+	filter: drop-shadow(8px 8px 10px black); /* This will make the image to have a shadow*/
+}
+
+
+.p_center{
+	text-align:center;
+	font-size: 1vw; /* Vw here will make the text to be responsive relative to the size of the browser*/
+	font-family: georgia,garamond,verdana,sans-serif;
+}
+
+#tribute-info{
+	text-align:center;
+	font-size: 1vw; /* Vw here will make the text to be responsive relative to the size of the browser*/
+	font-family: georgia,garamond,verdana,sans-serif;
+}
+
+#tribute-link:hover{
+	text-align:center;
+	font-size: 1vw; /* Vw here will make the text to be responsive relative to the size of the browser*/
+	font-family: georgia,garamond,verdana,sans-serif;
+	color:gold; /*this is how you wanna do to just change the color of the link*/
+}
+
